@@ -1,0 +1,82 @@
+logico abastecimento agua
+
+* = Chave Primária (PK)
+# = Chave Estrangeira (FK)
+
+EstacaoTratamento:
+- id_estacao *
+- nome_est
+- latitude
+- longitude
+
+Reservatorio:
+- id_reservatorio *
+- nome_res
+- nivel_atual
+- localizacao
+- capacidade_total
+- id_estacao # -> EstacaoTratamento.id_estacao
+
+RedeDistribuicao:
+- id_rede *
+- comprimento_m
+- pressao_media
+- id_reservatorio # -> Reservatorio.id_reservatorio
+
+Hidrometro:
+- id_hidrometro *
+- data_instalacao
+- numero_serie
+- id_rede # -> RedeDistribuicao.id_rede
+
+Sensor:
+- id_sensor *
+- data_instalacao
+- id_hidrometro # -> Hidrometro.id_hidrometro
+- id_tipo_sensor # -> TipoSensor.id_tipo_sensor
+
+TipoSensor:
+- id_tipo_sensor *
+- nome_tipo
+- descricao
+
+Cliente:
+- id_cliente *
+- CPF_CNPJ
+- nome_cliente
+
+Pocos:
+- id_poco *
+- id_cliente # -> Cliente.id_cliente
+- id_hidrometro # -> Hidrometro.id_hidrometro
+
+Leitura:
+- id_leitura *
+- data_leitura
+- consumo_m3
+- id_hidrometro # -> Hidrometro.id_hidrometro
+
+Fatura:
+- id_fatura *
+- data_emissao
+- valor_total
+- status_pagamento
+- id_leitura # -> Leitura.id_leitura
+
+Alerta:
+- id_alerta *
+- descricao
+- nivel_prioridade
+- data_hora
+- id_tipo_alerta # -> TipoAlerta.id_tipo_alerta
+
+TipoAlerta:
+- id_tipo_alerta *
+- nome_tipo
+- descricao
+- nivel_padrao
+
+Gera:
+- id_alerta # -> Alerta.id_alerta
+- id_fatura # -> Fatura.id_fatura
+  (PK composta: id_alerta, id_fatura)
