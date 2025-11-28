@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Barcos de Luxo</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="section-dark">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom-gold">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="imagens/logo2.png" alt="Logomarca Barcos de Luxo" height="40" class="me-2">
+                    <div><span class="fw-semibold text-white">Barcos de Luxo</span></div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <button class="btn btn-outline-gold" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <i class="fas fa-user me-2"></i>Login
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <h1 class="text-center section-title mb-5">Nosso Catálogo Completo</h1>
+
+            <ul class="nav nav-pills justify-content-center mb-5 filter-nav">
+                <li class="nav-item">
+                    <button class="nav-link active" data-filter="all">Todos</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-filter="iate">Iates</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-filter="lancha">Lanchas</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-filter="jetski">Jet Skis</button>
+                </li>
+            </ul>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="iate">
+                    <div class="card h-100 boat-card-dark">
+                        <img src="imagens/Ferretti01.jpg" class="card-img-top" alt="Spirit Ferretti 88">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Spirit Ferretti 88</h5>
+                            <p class="card-text small">Luxo e engenharia naval italiana.</p>
+                            <h6 class="card-price">R$ 22 Milhões</h6>
+                            <a href="SpiritFerretti88.html" class="btn btn-outline-gold mt-auto">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="iate">
+                    <div class="card h-100 boat-card-dark">
+                        <img src="imagens/Intermarine01.jpeg" class="card-img-top" alt="Intermarine 95">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Intermarine 95</h5>
+                            <p class="card-text small">O superyacht que redefine a grandiosidade.</p>
+                            <h6 class="card-price">R$ 20 Milhões</h6>
+                            <a href="Intermarine95.html" class="btn btn-outline-gold mt-auto">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="iate">
+                    <div class="card h-100 boat-card-dark">
+                        <img src="imagens/Azimut01.jpg" class="card-img-top" alt="Azimut 60">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Azimut 60</h5>
+                            <p class="card-text small">Equilíbrio perfeito de espaço e conforto.</p>
+                            <h6 class="card-price">R$ 6,4 Milhões</h6>
+                            <a href="Azimut60.html" class="btn btn-outline-gold mt-auto">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="lancha">
+                    <div class="card h-100 boat-card-dark">
+                        <img src="imagens/Focker01.webp" class="card-img-top" alt="Lancha Focker 330">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Focker 330 GT</h5>
+                            <p class="card-text small">Performance e design esportivo para passeios diurnos.</p>
+                            <h6 class="card-price">R$ 1,2 Milhão</h6>
+                            <a href="Focker330GT.html" class="btn btn-outline-gold mt-auto">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="lancha">
+                    <div class="card h-100 boat-card-dark">
+                        <img src="imagens/Schaefer01.avif" class="card-img-top" alt="Lancha Schaefer 400">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Schaefer 400</h5>
+                            <p class="card-text small">Conforto de iate em uma lancha cabinada versátil.</p>
+                            <h6 class="card-price">R$ 2,5 Milhões</h6>
+                            <a href="Schaefer400.html" class="btn btn-outline-gold mt-auto">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="lancha">
+                    <div class="card h-100 boat-card-dark">
+                        <img src="imagens/Cimitarra01.jpg" class="card-img-top" alt="Lancha Cimitarra 360 HT">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Cimitarra 360 HT</h5>
+                            <p class="card-text small">Hard top, espaço gourmet e design moderno.</p>
+                            <h6 class="card-price">R$ 1,5 Milhão</h6>
+                            <a href="Cimitarra360HT.html" class="btn btn-outline-gold mt-auto">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="jetski">
+                    <div class="card h-100 boat-card-dark">
+                        <img src="imagens/RXT02.jpg" class="card-img-top" alt="Jet Ski Sea-Doo RXT-X">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Sea-Doo RXT-X 300</h5>
+                            <p class="card-text small">Potência máxima e estabilidade para águas abertas.</p>
+                             <h6 class="card-price">R$ 150.000</h6>
+                            <a href="SeaDooRXTX300.html" class="btn btn-outline-gold mt-auto">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="jetski">
+                    <div class="card h-100 boat-card-dark">
+                        <img src="imagens/Yamaha01.jpg" class="card-img-top" alt="Jet Ski Yamaha GP1800R">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Yamaha GP1800R SVHO</h5>
+                            <p class="card-text small">Performance de corrida e agilidade inigualável.</p>
+                            <h6 class="card-price">R$ 165.000</h6>
+                            <a href="YamahaGP1800R.html" class="btn btn-outline-gold mt-auto">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="jetski">
+                    <div class="card h-100 boat-card-dark">
+                        <img src="imagens/Kawasaki01.webp" class="card-img-top" alt="Jet Ski Kawasaki Ultra 310LX">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Kawasaki Ultra 310LX</h5>
+                            <p class="card-text small">Supercharged com sistema de som de luxo.</p>
+                            <h6 class="card-price">R$ 175.000</h6>
+                            <a href="KawasakiUltra310LX.html" class="btn btn-outline-gold mt-auto">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer-custom">
+        <div class="container">
+            <p>Explore os Barcos mais fantásticos e luxuosos</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank" aria-label="Visite nosso Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Visite nosso Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Visite nosso Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="copyright">© 2025 Barcos de Luxo — Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title" id="loginModalLabel">Acesso Restrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-login-tab" data-bs-toggle="pill" data-bs-target="#pills-login" type="button" role="tab" aria-controls="pills-login" aria-selected="true">Login</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-register-tab" data-bs-toggle="pill" data-bs-target="#pills-register" type="button" role="tab" aria-controls="pills-register" aria-selected="false">Cadastro</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="loginEmailInput" class="form-label">Endereço de Email</label>
+                                    <input type="email" class="form-control" id="loginEmailInput" placeholder="seuemail@exemplo.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPasswordInput" class="form-label">Senha</label>
+                                    <input type="password" class="form-control" id="loginPasswordInput" placeholder="Sua senha">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberCheck">
+                                    <label class="form-check-label" for="rememberCheck">Lembrar de mim</label>
+                                </div>
+                                 <div class="d-grid">
+                                    <button type="submit" class="btn btn-gold">Entrar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="registerNameInput" class="form-label">Nome Completo</label>
+                                    <input type="text" class="form-control" id="registerNameInput" placeholder="Seu nome completo" required>
+                                </div>
+                                 <div class="mb-3">
+                                    <label for="registerBirthdateInput" class="form-label">Data de Nascimento</label>
+                                    <input type="date" class="form-control" id="registerBirthdateInput" required>
+                                </div>
+                                 <div class="mb-3">
+                                    <label for="registerCpfInput" class="form-label">CPF</label>
+                                    <input type="text" class="form-control" id="registerCpfInput" placeholder="000.000.000-00" required>
+                                </div>
+                                 <div class="mb-3">
+                                    <label for="registerAddressInput" class="form-label">Endereço</label>
+                                    <input type="text" class="form-control" id="registerAddressInput" placeholder="Sua rua, número, bairro..." required>
+                                </div>
+                                 <div class="mb-3">
+                                    <label for="registerPhoneInput" class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" id="registerPhoneInput" placeholder="(00) 00000-0000" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerEmailInput" class="form-label">Endereço de Email</label>
+                                    <input type="email" class="form-control" id="registerEmailInput" placeholder="seuemail@exemplo.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerPasswordInput" class="form-label">Crie uma Senha</label>
+                                    <input type="password" class="form-control" id="registerPasswordInput" placeholder="Mínimo de 6 caracteres" required>
+                                </div>
+                                 <div class="d-grid">
+                                    <button type="submit" class="btn btn-gold">Finalizar Cadastro</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-nav .nav-link');
+            const productItems = document.querySelectorAll('.product-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    productItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
