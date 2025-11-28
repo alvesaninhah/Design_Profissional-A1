@@ -1,38 +1,69 @@
 README - Portfolio
 Sobre o Portfolio
 
-Este repositório contém os projetos realizados ao longo do meu curso de Ciência da Computação. Cada projeto foi desenvolvido com foco em aprendizado prático e aplicação de conceitos adquiridos nas disciplinas de algoritmos, linguagens de programação e desenvolvimento web.
+Este repositório contém os projetos desenvolvidos durante o curso de Programador Web no SENAC 2024 e ao longo do curso de Ciência da Computação. O foco está em aplicar o conhecimento adquirido em programação web, desenvolvimento front-end e gerenciamento de projetos.
 
 Projetos
-1. Ordenação em C
+1. Ordenação e Análise de Desempenho em C
 
-Neste projeto, implementei algoritmos de ordenação utilizando linguagem C. O objetivo foi estudar e aplicar diferentes técnicas de ordenação de dados, como Bubble Sort, Insertion Sort e Quick Sort, e entender como a complexidade de tempo e espaço afeta a performance de cada um.
+Neste projeto, implementei e comparei três algoritmos de ordenação: Bubble Sort, Insertion Sort e Quick Sort. O objetivo foi aplicar os conceitos de algoritmos e complexidade computacional, realizando a ordenação de números com base no meu RGM (número de matrícula) e vetores aleatórios.
 
-Funcionalidades:
+Características principais:
 
-Implementação dos algoritmos de ordenação mencionados.
+Comparação entre os três algoritmos com medições de tempo e número de passos.
 
-Entrada de dados pelo usuário para ordenação de números.
+Testes de desempenho com diferentes tamanhos de vetores.
 
-Exibição do tempo de execução e comparação de desempenho entre os algoritmos.
+Análise dos resultados e escolha do algoritmo mais eficiente.
 
-2. Projeto Final SENAC - Página HTML Completa
+Comando para executar o projeto:
 
-Desenvolvi junto a colegas, uma página HTML completa, onde abordei as linguagens de HTML, CSS e JavaScript.
-O objetivo foi criar uma página interativa que explicasse os conceitos básicos dessas tecnologias, com exemplos práticos e botões de "Saiba Mais" para cada uma delas.
 
-Funcionalidades:
+gcc -O1 -std=c11 main.c -o ordena
+./ordena
 
-Seções sobre HTML, CSS, JavaScript com explicações e interatividade.
 
-Layout responsivo utilizando CSS para garantir a boa visualização em diferentes dispositivos.
+Resultados:
 
-JavaScript para funcionalidades dinâmicas, como alertas e validações.
+Bubble Sort: O mais lento e com maior número de trocas.
+
+Insertion Sort: Melhor desempenho que o Bubble Sort em vetores quase ordenados.
+
+Quick Sort: O mais eficiente, especialmente com grandes vetores.
+
+
+2. Projeto Final do Curso de Programador Web - SENAC 2024
+
+Este projeto foi desenvolvido como parte do curso de Programador Web no SENAC 2024. O foco foi criar um site interativo que abordasse as tecnologias essenciais de HTML5, CSS e JavaScript, aplicando os conceitos aprendidos no curso, com um forte foco em design responsivo e funcionalidade dinâmica.
+
+Principais conceitos abordados:
+
+HTML5: Estruturação de páginas web com uso das principais tags, como <header>, <footer>, <article>, <nav>, entre outras.
+
+CSS: Estilização de elementos usando Flexbox, Grid, Transições e Animações para criar layouts interativos e visualmente atraentes.
+
+JavaScript: Desenvolvimento de funcionalidades dinâmicas, como event handling, manipulação de DOM e interatividade com o usuário.
+
+Git e GitHub: Controle de versão do código e colaboração no desenvolvimento, aprendendo a usar Git para versionamento e GitHub para hospedagem de projetos.
+
+Ferramentas e Tecnologias:
+
+Google Classroom: Para acesso a materiais didáticos e atividades.
+
+Trello: Para o gerenciamento de tarefas e acompanhamento do progresso do projeto.
+
+MySQL: Início do aprendizado sobre bancos de dados relacionais e operações CRUD (Create, Read, Update, Delete).
+
+Como rodar o projeto
+
+Para visualizar o projeto, basta abrir o arquivo index.html em um navegador. Para usar as funcionalidades JavaScript, também é necessário garantir que os arquivos app.js e styles.css estejam devidamente conectados.
 
 Habilidades
 
-Desenvolvimento Web (HTML, CSS, JavaScript): Construção de páginas web interativas e responsivas.
+Desenvolvimento Web (HTML, CSS, JavaScript): Criação de sites interativos e responsivos.
 
-Lógica de Programação: Aplicação de conceitos de ordenação e análise de algoritmos.
+Git e GitHub: Controle de versão e colaboração em projetos de software.
+
+MySQL e Banco de Dados: Início do aprendizado sobre modelagem e manipulação de dados.
 
 Gestão de Projetos
