@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="../_css/geral.css">
+        <script src="../_js/formatar.js"></script>
+        <script src="../_js/validainput.js"></script>
+    </head>
+    <body>
+        <div class="topo" class="material-symbols-outlined">
+            <img class="logo" src="../_img/logomarca.png" alt="logomarca">
+
+            <ul class="menu">
+                <li><a href="#" style="color: #000;">HOME</a></li>
+                <li><a href="#" style="color: #000;">HMTL5</a></li>
+                <li><a href="#" style="color: #000;">CSS</a></li>
+                <li><a href="#" style="color: #000;">JAVASCRIPT</a></li>
+                <li><a href="#" style="color: #000;">CONTATOS</a></li>
+                <li><a href="../index.html">SAIR
+                    <span class="material-symbols-outlined">
+                        logout
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="all">
+            <form class="form-horizontal" id="cadFormulario">
+                <fieldset>
+                  <legend>Novo Cadastro</legend>
+
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="textinput">Nome</label>  
+                      <div class="col-md-5">  
+                      <input id="textinput" name="nome" id="nome" type="text" placeholder="Seu Nome" class="form_input" required="">
+                        
+                      </div>
+                    </div>
+                  
+                  
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="txtSobrenome">Sobrenome</label>  
+                      <div class="col-md-5">
+                      <input id="txtSobrenome" name="sobrenome" id="sobrenome" type="text" placeholder="Seu Sobrenome" class="form_input" required="">
+                        
+                      </div>
+                    </div>
+
+                    <div class="form-group" id="divWths">
+                        <label class="col-md-4 control-label" for="txtCelular">Celular</label>
+                        <div class="col-md-4" style="width: 110px; text-align: center;">
+                        <input type="text" placeholder="(00)" maxlength="2" class="form_input" id="DDD" 
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" onblur="this.value='('+ this.value +')'" onfocus="this.value=''"/>
+                        </div>
+                        <div class="col-md-4">
+                        <input id="celular" maxlength="9" name="celular" type="text" placeholder="Exemplo 00000-0000 ou 0000-0000" class="form_input" required="required"
+                        onblur="mascaraDeTelefone(this)" onfocus="this.value='', tirarHifen(this)" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" > 
+                        </div>
+                    </div>
+                                
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="txtEmail">E-mail</label>  
+                      <div class="col-md-6">
+                      <input id="email" name="email" type="text" placeholder="seuemail@email.com.br" class="form_input" required="" onblur="IsEmail(this.value)">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="txtRetryEmail">Confirme E-mail</label>  
+                        <div class="col-md-6">
+                        <input id="retryEmail" name="retryEmail" type="text" placeholder="seuemail@email.com.br" class="form_input" required="" onblur="IsRetryEmail(this.value)">
+                        </div>
+                      </div>
+                    
+                          
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="txtPwd">Senha</label>
+                      <div class="col-md-4">
+                        <input id="senha" name="senha" type="password" placeholder="Digite sua senha" class="form_input" required="">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="txtRetrySenha">Confirme Senha</label>
+                        <div class="col-md-4">
+                          <input id="retrySenha" name="retrySenha" type="password" placeholder="Confirme sua senha" class="form_input" required="">
+                          <input type="hidden" value="1" id="ativo" name="ativo">
+                        </div>
+                      </div> 
+                    
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="bntSend"></label>
+                      <div class="col-md-8">
+                        <button type="submit" id="bntSend" name="bntSend" class="submit" onclick="enviarDados()">Enviar Cadastro</button>
+                        <button type="reset" id="bntLimpar" name="bntLimpar" class="reset">Limpar Tudo</button>
+                      </div>
+                    </div>
+                </fieldset>
+                </form>  
+                <script src="../_js/scriptDB.js"></script>
+        </div>
+        <footer class="footer">
+            <p class="pj2024">Projeto final Curso de programação JavaScript Senac 2024</p>
+            <p class="textp">Professor: Lucas Souto</p>
+            <p class="textp">Alunos: Alessandro R. Nascimento | Aninhah Alves | Rhaicon R. Lourenço | Victor Julio | Marcio M. Araujo</p>
+            <img id="img1" src="../_img/senac100colorida.png" alt="senac100colorida"><img id="img2" src="../_img/javascript-39402.png" alt="JS">
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="../_css/css.css">
+    </head>
+    <body>
+        <div class="topo" class="material-symbols-outlined">
+            <img class="logo" src="../_img/logomarca.png" alt="logomarca">
+
+            <ul class="menu">
+                <li><a href="../_site/home.html">HOME</a></li>
+                <li><a href="../_site/html5.html">HMTL5</a></li>
+                <li><a href="../_site/css.html" style="color: rgb(94, 96, 211);">CSS</a></li>
+                <li><a href="../_site/js.html">JAVASCRIPT</a></li>
+                <li><a href="../_site/contato.html">CONTATOS</a></li>
+                <li><a href="../index.html" onclick="logoff()">LOGOFF
+                    <span id="ico" class="material-symbols-outlined">
+                        lock_person
+                        </span>
+                    </a>
+                </li>
+            </ul> 
+        </div>
+        <div class="all">
+            <h2 class="titulop">O que é CSS?<br> Aprendendo o conhecimento básico </h2>
+            <img class="img1" src="/_img/imagemcss.jpg">
+            <nav class="borda">
+                <h2 class="titulolista">Conteúdo</h2>
+                <ul class="ulhtml">
+                    <li>O Que É HTML?</li>
+                    <li>Funcionamento do CSS</li>
+                    <li>A Origem do CSS</li>
+                    <li>Tags e Elementos CSS Populares </li>
+                    <li>Prós e Contras do CSS</li>
+                </ul>
+            </nav> 
+            <div class="textos">            
+            <h2 class="titulolista">O Que É CSS?</h2>
+            <h3 class="texto">CSS significa Cascading Style Sheets, é uma linguagem de estilo utilizada para descrever a apresentação de um documento escrito em uma linguagem de marcação, como HTML. 
+            Com CSS, é possível definir o layout, as cores, as fontes e outros aspectos visuais de um documento web, permitindo assim separar o conteúdo estrutural (HTML) da sua apresentação visual (CSS).
+             Isso facilita a manutenção e a atualização de sites, pois as alterações de estilo podem ser feitas em um único arquivo CSS, que afetará todas as páginas HTML que o referenciam.</h3>
+            <h2 class="titulolista">Funcionamento do CSS</h2>   
+            <h3 class="texto">O CSS (Cascading Style Sheets) é uma linguagem de folhas de estilo usada para estilizar documentos HTML. 
+                Ele permite que você aplique estilos seletivamente a elementos em documentos HTML. 
+                Aqui está uma visão geral de como o CSS funciona: 
+                <ul class="listacss">
+                    <li><strong> do HTML:</strong> O navegador carrega o HTML, que é recebido pela internet.</li>
+                    <li><strong>Conversão para DOM:</strong> O HTML é convertido para um DOM (Document Object Model). O DOM representa o documento na memória do computador.</li>
+                    <li><strong>Requisição de Recursos:</strong> O navegador requisita a maioria dos recursos que estão vinculados no documento HTML, como imagens incorporadas, 
+                        vídeos e folhas de estilo CSS.</li>
+                    <li><strong>Análise do CSS:</strong> O navegador analisa o CSS encontrado e interpreta as diferentes regras por meio de seus diferentes tipos de seletores em diferentes baldes 
+                        (buckets), tais como elementos (ex: h2, h3), classes (.myElement), ID (#myNav), e outros mais. </li>
+                    <li><strong>Aplicação das Regras de Estilo:</strong> Baseado nos seletores encontrados, o navegador insere as regras de estilização que devem ser aplicadas para cada node no DOM,
+                        e anexa o estilo para os elementos como foram especificados nas folhas de estilização</li>
+                    <li><strong>Renderização da Árvore:</strong> A árvore de renderização é organizada na estrutura e deve aparecer depois das regras de estilo serem aplicadas ao documento.</li>
+                    <li><strong>Pintura da Página:</strong> O visual de visualização da página é por fim mostrado na tela.</li>
+                </ul>
+            <h3 class="texto">Em resumo, o CSS opera através de seletores, propriedades e valores. Os seletores escolhem elementos HTML, as propriedades definem sua aparência e \
+                comportamento, e os valores especificam os detalhes dessas definições.</h3>
+           <h2 class="titulolista">A Origem do CSS:</h2>
+           <h3 class="texto">O CSS (Cascading Style Sheets) foi proposto pela primeira vez em outubro de 1994 por Håkon Wium Lie. Ele queria facilitar a programação de sites, 
+                que na época era muito mais complexa. As pessoas tinham que utilizar mais códigos para chegar a um resultado simples, como criar uma tabela.
+
+                Håkon Wium Lie e Bert Bos apresentaram a proposta do CSS em 1995, que logo foi apoiada pela W3C (World Wide Web Consortium). A ideia geral era utilizar HTML somente 
+                para estruturar o website e a tarefa de apresentação ficaria com o CSS. Isso poderia ser feito através de um arquivo separado css ou no próprio HTML demarcado pelas tags.
+
+                A primeira versão oficial do CSS, conhecida como CSS Level 1 (CSS 1), foi lançada em 1996. Dois anos depois, em 1998, foi lançada a recomendação do CSS de nível 2.
+                A terceira versão do CSS ainda está em desenvolvimento.
+            
+                Portanto, a origem do CSS está ligada à necessidade de separar a estrutura do conteúdo (HTML) da apresentação do mesmo (CSS), facilitando a manutenção e a consistência dos sites</h3>
+            <h2 class="titulolista">Tags e Elementos CSS Populares:</h2>
+            <div class="all">
+            <table>
+                <thead>
+                    <tr>
+                        <td><strong>Div:</strong> A tag div é uma das mais utilizadas e versáteis no CSS. Ela permite agrupar outros elementos juntos e aplicar estilos específicos a eles.
+                             É comumente usada para criar layouts, como colunas e seções diferentes em uma página.</td>
+                        <td><strong>Class e ID:</strong> Os elementos HTML possuem 2 atributos que são muito usados dentro do CSS para associar estilo a um elemento específico da página: class e id.
+                             Há uma grande diferença entre os dois:</strong> dentro de um documento HTML, você pode repetir o mesmo valor class em vários elementos, mas só pode usar um id uma vez</td>
+                        <td><strong>Color:</strong> A propriedade color é usada para alterar a cor do texto de um elemento.</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Background-color:</strong> A propriedade background-color é usada para definir a cor de fundo de um elemento</td>
+                        <td><strong>Font-size:</strong> A propriedade font-size é usada para definir o tamanho da fonte de um elemento</td>
+                        <td>Margin e Padding: </strong>As propriedades margin e padding são usadas para criar espaço ao redor dos elementos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Display:</strong> A propriedade display é usada para determinar como um elemento deve ser exibido</td>
+                        <td><strong>Height e Width:</strong> As propriedades height e width são usadas para definir a altura e a largura de um elemento</td>
+                        <td><strong>Border:</strong> A propriedade border é usada para definir a borda ao redor de um elemento HTML. Ela pode ser usada 
+                            para definir a largura, estilo e cor da borda.</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            <h3 class="finais">Existem muitas outras tags e elementos HTML disponíveis para uma variedade de finalidades, como formulários, tabelas, listas, elementos semânticos, elementos de mídia, entre outros.</h3>
+            <h2 class="titulolista">Prós e Contras do CSS</h2>
+            <h3 class="PC">Prós do CSS</h3>
+                    <nav>
+                        <ul class="lista2">
+                            <li><strong>Consistência:</strong> O estilo é aplicado de forma consistente em vários sites. Uma única instrução pode controlar várias áreas.</li>
+                            <li><strong>Manutenção Simplificada:</strong> A alteração de uma linha de código afeta todo o site, simplificando a manutenção</li>
+                            <li><strong>Economia de Largura de Banda:</strong> As economias de largura de banda são números substanciais de tags insignificantes que não são 
+                                distinguidas de uma confusão de páginas</li>
+                            <li><strong>Menos Código:</strong> Os web designers precisam usar poucas linhas de programação para cada página, melhorando a velocidade do site</li>
+                            <li><strong>Personalização:</strong> Fácil para o usuário personalizar a página online</li>
+                            <li><strong>Redução do Tamanho do Arquivo:</strong> Reduz o tamanho da transferência do arquivo.</li>
+                        </ul>
+                        <h3 class="PC">Contras do CSS</h3>
+                        <ul class="lista2">
+                        <li><strong>Compatibilidade do Navegador:</strong> Com CSS, o que funciona com um navegador nem sempre funciona com outro. Os desenvolvedores da web 
+                            precisam testar a compatibilidade, executando o programa em vários navegadores.</li>
+                        <li><strong>Efeito Cascata:</strong> Mudanças em uma parte do CSS podem ter efeitos indesejados em outras partes, tornando difícil a manutenção de grandes bases de código
+                            . Isso ocorre porque o CSS opera em um sistema de cascata, onde os estilos aplicados a um elemento podem “vazar” e afetar outros elementos</li>
+                        <li><strong>Verbosidade:</strong>Um código CSS é considerado verboso se exigir 
+                            muitas linhas de código para realizar uma tarefa que poderia ser realizada com menos. Isso pode tornar o código mais difícil de ler e manter.
+                             No entanto, ferramentas como SASS, LESS e Stylus podem ajudar a reduzir a verbosidade, permitindo que os desenvolvedores escrevam código CSS mais limpo e eficiente.</li>
+                        <li><strong>Confusão:</strong> Diferentes níveis de CSS, ou seja, CSS, CSS 2, CSS 3, costumam ser bastante confusos</li>
+                        <li><strong>Segurança:</strong> Existe uma escassez de segurança.</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> 
+            
+        </div>
+        <footer class="footer">
+            <p class="pj2024">Projeto final Curso de programação JavaScript Senac 2024</p>
+            <p class="textp">Professor: Lucas Souto</p>
+            <p class="textp">Alunos: Alessandro R. Nascimento | Aninhah Alves | Rhaicon R. Lourenço | Victor Julio | Marcio M. Araujo</p>
+            <img id="img1" src="../_img/senac100colorida.png" alt="senac100colorida"><img id="img2" src="../_img/javascript-39402.png" alt="JS">
+        </footer>
+    </body>
+</html>

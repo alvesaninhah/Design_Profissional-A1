@@ -1,0 +1,109 @@
+
+.titulop {
+    font-size: 35pt;
+    text-align: center; 
+    margin: 30px;
+}
+
+body {
+    font-family: "Questrial", sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-grow: initial;  
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.img1 {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+ }
+ 
+.titulolista {
+    font-size: 30px;
+    text-align: left;
+    color: #8673f1;
+    line-height: 1.5em;
+    
+}
+.finais {
+    font-weight: normal;
+    font-family: sans-serif;
+    
+}
+.PC {
+    font-size: 25;
+    color: #4d30f1;
+}
+.borda {
+    font-size: 10.9pt;
+    text-align: center;
+    position: relative;
+    margin: 40px auto;
+    max-width: 400px;
+    background-color: #d4c6f0;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.listacss {
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0;
+    list-style-type: decimal;
+    margin-top: 20px;
+} 
+
+.lista2 {
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0%;
+    list-style-type: decimal;
+    margin-top: 20px;
+}
+.ulhtml {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 20px ;
+
+}
+
+.textos {
+    position: relative;
+    margin-left: 100px;
+    text-align: justify;
+    line-height: 2.0em;
+    
+}
+.texto {
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+th, td {
+    border: 5px solid #cfc1e6;
+    padding: 10px;
+    text-align: left;
+    padding: 5px;
+}
+
+th {
+    background-color: #f2f2f2;
+}

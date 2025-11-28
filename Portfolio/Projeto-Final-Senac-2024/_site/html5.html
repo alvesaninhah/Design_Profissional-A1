@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="../_css/geral.css">
+        <link rel="stylesheet" href="../_css/html.css">
+        
+    </head>
+    <body>
+        <div class="topo" class="material-symbols-outlined">
+            <img class="logo" src="../_img/logomarca.png" alt="logomarca">
+
+            <ul class="menu">
+                <li><a href="../_site/home.html">HOME</a></li>
+                <li><a href="../_site/html5.html" style="color: rgb(94, 96, 211);">HMTL5</a></li>
+                <li><a href="../_site/css.html">CSS</a></li>
+                <li><a href="../_site/js.html">JAVASCRIPT</a></li>
+                <li><a href="../_site/contato.html">CONTATOS</a></li>
+                <li><a href="../index.html" onclick="logoff()">LOGOFF
+                    <span id="ico" class="material-symbols-outlined">
+                        lock_person
+                        </span>
+                    </a>
+                </li>
+            </ul> 
+        </div>
+        <div class="all">
+            <h1 class="titulop">O que é HTML?<br> Aprendendo o conhecimento básico </h1>
+            <img class="img1" src="/_img/banner1.png">
+            <nav class="borda">
+                <h1 class="titulolista">Conteúdo</h1>
+                <ul class="ulhtml">
+                    <li>O Que É HTML?</li>
+                    <li>Funcionamento do HTML</li>
+                    <li>A Origem do HTML</li>
+                    <li>Tags e Elementos HTML Populares </li>
+                    <li>A Progressão do HTML: Qual a Diferença entre HTML e HTML5?</li>
+                </ul>
+            </nav> 
+            <div class="textos">            
+            <h1 class="titulolista">O Que É HTML?</h1>
+            <h2 class="texto">HTML (HyperText Markup Language) é uma linguagem de marcação utilizada para criar páginas web. Ela fornece uma estrutura básica para a apresentação de conteúdo na web, permitindo aos desenvolvedores definir a estrutura e o layout de uma página, bem como incorporar diversos tipos de mídia, como texto, imagens, vídeos e links.
+                HTML funciona por meio de uma série de elementos, conhecidos como tags, que são utilizados para marcar e estruturar diferentes partes do conteúdo. Cada tag possui uma função específica e pode conter atributos que modificam seu comportamento ou aparência.
+            </h2>
+            <h1 class="titulolista">Funcionamento do HTML</h1>   
+            <h2 class="texto">O HTML funciona como um esqueleto para as páginas web. Quando um navegador acessa uma página HTML, ele interpreta o código HTML e utiliza as instruções fornecidas para renderizar a página conforme especificado.
+
+                Os elementos HTML são organizados em uma árvore hierárquica, com o elemento <code><html></code> como o nó raiz. O navegador percorre essa árvore, processando cada elemento e exibindo o conteúdo de acordo com as instruções fornecidas pelo código HTML.
+                
+                Os elementos HTML podem ser utilizados para definir a estrutura da página (por exemplo, cabeçalhos, parágrafos, listas), inserir conteúdo multimídia (como imagens e vídeos), criar links para outras páginas, definir formulários para interação do usuário, entre outras funcionalidades.</h2>
+            <h1 class="titulolista">A Origem do HTML:</h1>
+            <h2 class="texto">HTML foi criado por Tim Berners-Lee enquanto trabalhava no CERN (Organização Europeia para a Pesquisa Nuclear) em 1990. A primeira especificação do HTML foi lançada em 1993 como uma forma de compartilhar documentos científicos e acadêmicos de forma eficiente pela internet. Desde então, o HTML evoluiu significativamente para atender às crescentes demandas da web moderna.
+            </h2>
+            <h1 class="titulolista">Tags e Elementos HTML Populares:</h1>
+            <div class="all">
+            <table>
+                <thead>
+                    <tr>
+                        <td><strong>&lt;html&gt;:</strong>Define o início e o do documento HTML.</td>
+                        <td><strong>&lt;head&gt;: </strong>Contém informações sobre o documento, como título, estilos CSS, metadados, etc.</td>
+                        <td><strong>&lt;title&gt;:</strong> Define o título da página exibido na barra de título do navegador.</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>&lt;body&gt;: </strong>Contém o conteúdo principal da página, como texto, imagens, links, etc.</td>
+                        <td><strong>&lt;p&gt;:</strong> Define um parágrafo de texto.</td>
+                        <td><strong>&lt;a&gt;:</strong> Define um hyperlink para outra página.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>&lt;img&gt;:</strong> Insere uma imagem na página.</td>
+                        <td><strong>&lt;div&gt;: </strong>Define uma divisão genérica ou seção na página.</td>
+                        <td><strong>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc.:</strong> Definem cabeçalhos de diferentes níveis.</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            <h2 class="finais">Existem muitas outras tags e elementos HTML disponíveis para uma variedade de finalidades, como formulários, tabelas, listas, elementos semânticos, elementos de mídia, entre outros.</h2>
+            <h1 class="titulolista">A Progressão do HTML:
+                Qual a Diferença entre HTML e HTML5?</h1>
+            <h2 class="texto">HTML5 é a versão mais recente do HTML e traz diversas melhorias em relação às versões anteriores. Algumas das principais diferenças incluem:</h2>
+                    <nav>
+                        <ul class="lista2">
+                            <li><strong>Suporte a Novas Tags Semânticas:</strong> O HTML5 introduziu várias novas tags semânticas, como &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;article&gt;,
+                                entre outras, que ajudam a estruturar melhor o conteúdo da página e torná-lo mais acessível para os motores de busca e leitores de tela.</li>
+                            <li><strong>Elementos de Formulário Avançados:</strong> O HTML5 expandiu os recursos de formulários com a adição de novos tipos de entrada, como &lt;input type="date"&gt;,
+                                 &lt;input type="email"&gt;, &lt;input type="url"&gt;, &lt;input type="range"&gt;, entre outros, facilitando a validação e coleta de dados.</li>
+                            <li><strong>Suporte a Elementos Multimídia Nativos: </strong>O HTML5 introduziu os elementos &lt;audio&gt; e
+                                 &lt;video&gt;, permitindo a incorporação de conteúdo de áudio e vídeo diretamente na página, sem a necessidade de plugins externos, como o Flash.</li>
+                            <li><strong>Melhorias na Manipulação de Gráficos e Animações:</strong> O HTML5 introduziu o elemento &lt;canvas&gt; e a API Canvas, que permitem a criação de gráficos e animações dinâmicas diretamente
+                                no navegador, sem a necessidade de tecnologias de terceiros, como o Adobe Flash.</li>
+                            <li><strong>Introdução de APIs para Armazenamento Local e Comunicação Assíncrona:</strong> O HTML5 inclui APIs para armazenamento local (como localStorage e sessionStorage), permitindo que os desenvolvedores armazenem dados no navegador do usuário de forma persistente.
+                                Além disso, foram introduzidas APIs para comunicação assíncrona, como WebSockets e Server-Sent Events, que facilitam a criação de aplicações web em tempo real.</li>
+                        </ul>
+                    </nav>
+                </div>  
+                <h2 class="finais">HTML foi criado por Tim Berners-Lee enquanto trabalhava no CERN (Organização Europeia para a Pesquisa Nuclear) em 1990. A primeira especificação do HTML foi lançada em 1993 como uma forma de compartilhar documentos científicos e acadêmicos de forma eficiente pela internet. Desde então, o HTML evoluiu significativamente para atender às crescentes demandas da web moderna.
+                </h2> 
+            </div> 
+            
+        </div>
+        
+        <footer class="footer">
+            <p class="pj2024">Projeto final Curso de programação JavaScript Senac 2024</p>
+            <p class="textp">Professor: Lucas Souto</p>
+            <p class="textp">Alunos: Alessandro R. Nascimento | Aninhah Alves | Rhaicon R. Lourenço | Victor Julio | Marcio M. Araujo</p>
+            <img id="img1" src="../_img/senac100colorida.png" alt="senac100colorida"><img id="img2" src="../_img/javascript-39402.png" alt="JS">
+        </footer>
+    </body>
+</html>
