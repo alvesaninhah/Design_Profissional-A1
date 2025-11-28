@@ -1,8 +1,8 @@
 Projeto final do curso javascript SENAC 2024
 
 Autores: 
-Alessandro R. Nascimento
-Aninhah Alves
+Alessandro R. Nascimento,
+Aninhah Alves e
 Marcio M. Araujo
 
 Prof. Lucas S. Monete
