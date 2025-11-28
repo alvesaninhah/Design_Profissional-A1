@@ -11,14 +11,18 @@ A estrutura do repositório é organizada da seguinte maneira:
 DesignProfissional_A1
 ├── Portfolio
 │   └── README.md
-├── Repositorios_1Semestre
+│       Projetos
+
 │   ├── Design_Profissional/
 |       └── Curriculo_Latex.pdf
 |           Certificado_Evento.pdf
 |           Atividades
+
 │   ├── Pensamento_Computacional_e_Algoritmos/
+
 │   ├── Desenvolvimento_Front_End/
-│   └── Modelagem_Banco_Dados/
+
+│   ├── Modelagem_Banco_Dados/
 
 Arquivos
 
