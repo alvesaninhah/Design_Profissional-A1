@@ -4,12 +4,8 @@ Autores:
 Alessandro R. Nascimento
 Aninhah Alves
 Marcio M. Araujo
-Rhaicon R. Lourenço
-Victor Julio
 
 Prof. Lucas S. Monete
-
-Este projeto tem objetivo colocar em pratica conhecimento adiquirido durante periodo de curso programação javascript no 1º trimestre de 2024
 
 **LINGUAGEM HMTL5**
 
@@ -101,6 +97,3 @@ Foi apresentado a ferramenta https://trello.com/ para gerenciamento do projeto e
 
 Atualmente estamos em aprendizado sobre funcionamento de Banco de Dados utilizado atualmente MYSQL Workback em andamento utilização CRUD (CREATE, READ, UPDATE, DELETE).
 
-**CRIAR API** Aguardando...  
-
-**Postgresql** Aguardando...
