@@ -1,20 +1,38 @@
-README
-Sobre Mim
+README - Portfolio
+Sobre o Portfolio
 
-Oi, sou Ana Karla, estudante de Ciência da Computação no primeiro semestre da UDF. Tenho 19 anos e adoro por programação e tecnologia.
-Atualmente, estou focada em desenvolver minhas habilidades em desenvolvimento web.
+Este repositório contém os projetos realizados ao longo do meu curso de Ciência da Computação. Cada projeto foi desenvolvido com foco em aprendizado prático e aplicação de conceitos adquiridos nas disciplinas de algoritmos, linguagens de programação e desenvolvimento web.
 
 Projetos
-1. Calculadora Científica em C
+1. Ordenação em C
 
-Ajudei no desenvolvimento de uma calculadora científica em linguagem C para realizar operações matemáticas avançadas, como trigonometria e logaritmos.
+Neste projeto, implementei algoritmos de ordenação utilizando linguagem C. O objetivo foi estudar e aplicar diferentes técnicas de ordenação de dados, como Bubble Sort, Insertion Sort e Quick Sort, e entender como a complexidade de tempo e espaço afeta a performance de cada um.
+
+Funcionalidades:
+
+Implementação dos algoritmos de ordenação mencionados.
+
+Entrada de dados pelo usuário para ordenação de números.
+
+Exibição do tempo de execução e comparação de desempenho entre os algoritmos.
 
 2. Projeto Final SENAC - Página HTML Completa
 
-Criei junto a colegas uma página HTML completa com conteúdos sobre HTML, CSS e JavaScript, abordando desde os conceitos básicos até a aplicação prática de cada linguagem, servindo como um guia para iniciantes.
+Desenvolvi junto a colegas, uma página HTML completa, onde abordei as linguagens de HTML, CSS e JavaScript.
+O objetivo foi criar uma página interativa que explicasse os conceitos básicos dessas tecnologias, com exemplos práticos e botões de "Saiba Mais" para cada uma delas.
+
+Funcionalidades:
+
+Seções sobre HTML, CSS, JavaScript com explicações e interatividade.
+
+Layout responsivo utilizando CSS para garantir a boa visualização em diferentes dispositivos.
+
+JavaScript para funcionalidades dinâmicas, como alertas e validações.
 
 Habilidades
 
-Desenvolvimento Web (HTML, CSS, JavaScript)
+Desenvolvimento Web (HTML, CSS, JavaScript): Construção de páginas web interativas e responsivas.
+
+Lógica de Programação: Aplicação de conceitos de ordenação e análise de algoritmos.
 
 Gestão de Projetos
