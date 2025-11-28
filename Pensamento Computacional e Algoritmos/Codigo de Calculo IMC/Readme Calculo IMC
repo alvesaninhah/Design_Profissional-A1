@@ -1,0 +1,56 @@
+README - Cálculo de IMC (Índice de Massa Corporal)
+Descrição
+
+Este programa em C calcula o Índice de Massa Corporal (IMC) de uma pessoa com base em seu peso e altura, e exibe a classificação de acordo com as faixas do IMC. Ele informa se a pessoa está abaixo do peso, com o peso ideal, com sobrepeso ou em diferentes graus de obesidade.
+
+Faixas de IMC:
+
+Abaixo do peso: IMC < 18.5
+
+Peso ideal: 18.5 ≤ IMC < 24.9
+
+Sobrepeso: 25.0 ≤ IMC < 29.9
+
+Obesidade grau 1: 30.0 ≤ IMC < 34.9
+
+Obesidade grau 2: IMC ≥ 35.0
+
+Funcionalidade
+
+O programa solicita ao usuário que insira seu peso (em kg) e altura (em metros).
+
+O IMC é calculado com a fórmula:
+
+IMC = peso (kg) / altura (m)2
+
+O programa exibe o valor calculado do IMC e a classificação de acordo com as faixas padrão.
+
+O IMC é classificado em seis categorias diferentes: Abaixo do peso, Peso ideal, Sobrepeso, Obesidade grau 1, Obesidade grau 2 e Obesidade grau 3.
+
+Como Usar
+Pré-requisitos
+
+Compilador C: É necessário um compilador C instalado (ex: GCC ou MinGW).
+
+IDE ou editor de texto: Você pode usar IDEs como Code::Blocks, DevC++, ou editores de texto como Visual Studio Code.
+
+Passos para rodar o programa
+
+Baixe ou copie o código.
+
+Abra seu compilador C ou IDE.
+
+Cole o código no seu ambiente de desenvolvimento.
+
+Compile e execute o programa.
+
+Digite o peso e a altura quando solicitado.
+
+Veja o IMC calculado e a classificação.
+
+Exemplo de Execução
+
+Peso em kg: 70
+Altura: 1.75
+Seu IMC é: 22.86
+Você está com o peso ideal!
